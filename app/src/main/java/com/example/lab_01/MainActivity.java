@@ -3,83 +3,55 @@ package com.example.lab_01;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
+import android.widget.Toast;
 
-import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.graphics.Insets;
-import androidx.core.view.ViewCompat;
-import androidx.core.view.WindowInsetsCompat;
+
+import java.util.regex.Pattern;
 
 public class MainActivity extends AppCompatActivity {
 
     private TextView arabicText;
     private TextView romanText;
+    // Регулярное выражение для корректного римского числа (от 1 до 3999)
+    // Wyrażenie regularne dla prawidłowej liczby rzymskiej (od 1 do 3999)
+    private static final Pattern ROMAN_PATTERN = Pattern.compile(
+            "^M{0,3}(CM|CD|D?C{0,3})(XC|XL|L?X{0,3})(IX|IV|V?I{0,3})$");
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        EdgeToEdge.enable(this);
         setContentView(R.layout.activity_main);
-
-        // Применяем отступы от системных окон
-        // Zastosowanie odstępów z okien systemowych
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
-            Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
-            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
-            return insets;
-        });
 
         arabicText = findViewById(R.id.arabicText);
         romanText = findViewById(R.id.romanText);
     }
 
-    // Обработчик нажатия для всех кнопок
-    // Obsługa naciśnięć dla wszystkich przycisków
-    public void onClickButton(View view) {
-        String currentArabic = arabicText.getText().toString();
-        int buttonId = view.getId();
+    // Обработчик для арабских кнопок (синие)
+    // Obsługa przycisków arabskich (niebieskich)
+    public void onClickArabic(View view) {
+        String current = arabicText.getText().toString();
+        int id = view.getId();
 
-        if (buttonId == R.id.button0) {
-            currentArabic += "0";
-        } else if (buttonId == R.id.button1) {
-            currentArabic += "1";
-        } else if (buttonId == R.id.button2) {
-            currentArabic += "2";
-        } else if (buttonId == R.id.button3) {
-            currentArabic += "3";
-        } else if (buttonId == R.id.button4) {
-            currentArabic += "4";
-        } else if (buttonId == R.id.button5) {
-            currentArabic += "5";
-        } else if (buttonId == R.id.button6) {
-            currentArabic += "6";
-        } else if (buttonId == R.id.button7) {
-            currentArabic += "7";
-        } else if (buttonId == R.id.button8) {
-            currentArabic += "8";
-        } else if (buttonId == R.id.button9) {
-            currentArabic += "9";
-        } else if (buttonId == R.id.button_back) {
-            // Удаление последнего символа
-            // Usuwanie ostatniego znaku
-            if (!currentArabic.isEmpty()) {
-                currentArabic = currentArabic.substring(0, currentArabic.length() - 1);
+        if (id == R.id.buttonClearArabic) {
+            current = "";
+        } else if (id == R.id.buttonBackArabic) {
+            if (!current.isEmpty()) {
+                current = current.substring(0, current.length() - 1);
             }
-        } else if (buttonId == R.id.button_clear) {
-            // Очистка
-            // Czyszczenie
-            currentArabic = "";
+        } else {
+            // Добавляем цифру
+            // Dodawanie liczby
+            String digit = ((TextView) view).getText().toString();
+            current += digit;
         }
+        arabicText.setText(current);
 
-        // Обновляем TextView с арабскими цифрами
-        // Aktualizacja TextView za pomocą cyfr arabskich
-        arabicText.setText(currentArabic);
-
-        // Конвертируем в римские, если не пусто
-        // Konwersja na rzymski, jeśli nie jest puste
-        if (!currentArabic.isEmpty()) {
+        // Конвертация арабского в римское
+        // Konwersja arabskiego na rzymski
+        if (!current.isEmpty()) {
             try {
-                int number = Integer.parseInt(currentArabic);
+                int number = Integer.parseInt(current);
                 String roman = Convert.arabicToRoman(number);
                 romanText.setText(roman);
             } catch (NumberFormatException e) {
@@ -89,4 +61,43 @@ public class MainActivity extends AppCompatActivity {
             romanText.setText("");
         }
     }
+
+    // Обработчик для римских кнопок (зелёные)
+    // Obsługa przycisków rzymskich (zielony)
+    public void onClickRoman(View view) {
+        String current = romanText.getText().toString();
+        int id = view.getId();
+
+        // Стираем последний римский символ
+        // Usuwanie ostatniego symbolu rzymskiego
+        if (id == R.id.buttonBackRoman) {
+            if (!current.isEmpty()) {
+                current = current.substring(0, current.length() - 1);
+            }
+        } else {
+            // Добавляем символ (например, M, D, C, L, X, V, I)
+            // Dodanie znaku (np. M, D, C, L, X, V, I)
+            String symbol = ((TextView) view).getText().toString();
+            String newRoman = current + symbol;
+            // Проверяем корректность римской записи
+            // Sprawdzenie, czy zapis rzymski jest poprawny
+            if (!newRoman.isEmpty() && !ROMAN_PATTERN.matcher(newRoman).matches()) {
+                Toast.makeText(this, "Błąd w rzymskim zapisie!", Toast.LENGTH_SHORT).show();
+                return;
+            }
+            current = newRoman;
+        }
+
+        romanText.setText(current);
+
+        // Конвертация римского в арабское
+        // Konwersja rzymskiego na arabski
+        if (!current.isEmpty()) {
+            String result = Convert.romanToArabic(current);
+            arabicText.setText(result);
+        } else {
+            arabicText.setText("");
+        }
+    }
+
 }
