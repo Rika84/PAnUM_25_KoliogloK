@@ -17,8 +17,43 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="97b008a7-8134-46dd-addd-aac93db82382" name="Changes" comment="lab2">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/.gitignore" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lab_03/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lab_03/app/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lab_03/app/build.gradle.kts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lab_03/app/proguard-rules.pro" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lab_03/app/src/androidTest/java/com/example/lab_03/ExampleInstrumentedTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lab_03/app/src/main/AndroidManifest.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lab_03/app/src/main/java/com/example/lab_03/MainActivity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lab_03/app/src/main/res/drawable/ic_launcher_background.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lab_03/app/src/main/res/drawable/ic_launcher_foreground.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lab_03/app/src/main/res/layout/activity_main.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lab_03/app/src/main/res/mipmap-anydpi/ic_launcher.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lab_03/app/src/main/res/mipmap-anydpi/ic_launcher_round.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lab_03/app/src/main/res/mipmap-hdpi/ic_launcher.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lab_03/app/src/main/res/mipmap-hdpi/ic_launcher_round.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lab_03/app/src/main/res/mipmap-mdpi/ic_launcher.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lab_03/app/src/main/res/mipmap-mdpi/ic_launcher_round.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lab_03/app/src/main/res/mipmap-xhdpi/ic_launcher.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lab_03/app/src/main/res/mipmap-xhdpi/ic_launcher_round.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lab_03/app/src/main/res/mipmap-xxhdpi/ic_launcher.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lab_03/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lab_03/app/src/main/res/mipmap-xxxhdpi/ic_launcher.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lab_03/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lab_03/app/src/main/res/values-night/themes.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lab_03/app/src/main/res/values/colors.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lab_03/app/src/main/res/values/strings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lab_03/app/src/main/res/values/themes.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lab_03/app/src/main/res/xml/backup_rules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lab_03/app/src/main/res/xml/data_extraction_rules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lab_03/app/src/test/java/com/example/lab_03/ExampleUnitTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lab_03/build.gradle.kts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lab_03/gradle.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lab_03/gradle/libs.versions.toml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lab_03/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lab_03/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lab_03/gradlew" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lab_03/gradlew.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lab_03/settings.gradle.kts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -86,7 +121,7 @@
         <option name="title" value="All" />
       </GitPushTagMode>
     </option>
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
     <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
@@ -95,12 +130,12 @@
     &quot;assignee&quot;: &quot;Rika84&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings">{
-  &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;https://github.com/Rika84/PAUM_25_KoliogloK&quot;,
-    &quot;accountId&quot;: &quot;9f9c7e78-0fe7-491c-ba63-5e649b45a76c&quot;
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/Rika84/PAUM_25_KoliogloK.git",
+    "accountId": "9f9c7e78-0fe7-491c-ba63-5e649b45a76c"
   }
-}</component>
+}]]></component>
   <component name="ProblemsViewState">
     <option name="selectedTabId" value="CurrentFile" />
   </component>
@@ -123,7 +158,8 @@
     "cidr.known.project.marker": "true",
     "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "D:/univer/kurs4_2/pl/android_pl/lab_01_02"
+    "last_opened_file_path": "D:/univer/kurs4_2/pl/android_pl/lab_01_02",
+    "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings"
   },
   "keyToStringList": {
     "ChangesTree.GroupingKeys": [
