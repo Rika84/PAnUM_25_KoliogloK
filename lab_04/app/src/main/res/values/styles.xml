@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.TwoStopwatchesTwoTimers" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <!-- motyw główny -->
+        <item name="colorPrimary">@color/purple_500</item>
+        <item name="colorPrimaryVariant">@color/purple_700</item>
+        <item name="colorSecondary">@color/teal_200</item>
+    </style>
+
+    <!-- styl zaokrąglonych przycisków w fioletowym kolorze -->
+    <style name="RoundedButtonPurple">
+        <item name="android:background">@drawable/rounded_button_purple</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <!-- styl zaokrąglonych pól EditText na białym tle -->
+    <style name="WhiteEditText">
+        <item name="android:background">@drawable/white_edittext_bg</item>
+        <item name="android:layout_margin">4dp</item>
+        <item name="android:padding">8dp</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <!-- styl dla wyświetlacza czasu w stoperze / minutniku -->
+    <style name="StopwatchTextStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/white_frame_bg</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">30sp</item>
+        <item name="android:layout_marginTop">4dp</item>
+        <item name="android:layout_marginBottom">4dp</item>
+        <item name="android:padding">8dp</item>
+    </style>
+</resources>
