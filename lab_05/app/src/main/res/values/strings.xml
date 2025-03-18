@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">lab_05</string>
+    <string name="map_description">Mapa lokalizacji kafeterii</string>
+    <string name="app_logo">Logo aplikacji</string>
+</resources>
