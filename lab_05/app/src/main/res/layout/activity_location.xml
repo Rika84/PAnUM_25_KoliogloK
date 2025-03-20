@@ -14,7 +14,7 @@
             android:id="@+id/tv_lokal_nazwa"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Bella Kafeteria"
+            android:text="Nazwa lokalu"
             android:textSize="24sp"
             android:textStyle="bold"/>
 
@@ -22,14 +22,14 @@
             android:id="@+id/tv_lokal_adres"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="ul. Majowa 14, 42-217 Wrocław"
+            android:text="Adres lokalu"
             android:layout_marginTop="8dp"/>
 
         <TextView
             android:id="@+id/tv_lokal_godziny"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Godziny otwarcia: 8:00 - 20:00 PON-NIEDZ"
+            android:text="Godziny otwarcia"
             android:layout_marginTop="8dp"/>
 
         <ImageView
