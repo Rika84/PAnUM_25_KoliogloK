@@ -1,0 +1,39 @@
+<resources>
+    <string name="app_name">lab_06</string>
+    <string-array name="currency_array">
+        <item>zł</item>
+        <item>$</item>
+        <item>€</item>
+        <item>₴</item>
+        <item>¥</item>
+    </string-array>
+
+    <string-array name="numeral_systems">
+        <item>dwókowy</item>
+        <item>czwórkowy</item>
+        <item>ósemkowy</item>
+        <item>dziesiętny</item>
+        <item>szesnastkowy</item>
+    </string-array>
+
+
+    <string-array name="length_units">
+        <item>mm</item>
+        <item>cm</item>
+        <item>cale</item>
+        <item>stopy</item>
+        <item>yardy</item>
+        <item>m</item>
+        <item>km</item>
+    </string-array>
+
+    <string-array name="area_units">
+        <item>mm²</item>
+        <item>cm²</item>
+        <item>m²</item>
+        <item>km²</item>
+        <item>ary</item>
+        <item>hektary</item>
+    </string-array>
+
+</resources>
