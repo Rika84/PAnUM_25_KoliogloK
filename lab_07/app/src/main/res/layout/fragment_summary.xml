@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:background="@drawable/gradient_background"
+    android:gravity="center_horizontal">
+
+    <TextView
+        android:id="@+id/tvScoreX"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Gracz X: 0 wygranych"
+        android:textSize="24sp"
+        android:textColor="@android:color/white"
+        android:layout_marginBottom="12dp" />
+
+    <TextView
+        android:id="@+id/tvScoreO"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Gracz O: 0 wygranych"
+        android:textSize="24sp"
+        android:textColor="@android:color/white"
+        android:layout_marginBottom="12dp" />
+
+    <TextView
+        android:id="@+id/tvDraws"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Remisy: 0"
+        android:textSize="24sp"
+        android:textColor="@android:color/white"
+        android:layout_marginBottom="12dp" />
+
+    <TextView
+        android:id="@+id/tvTotal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Łącznie gier: 0"
+        android:textSize="20sp"
+        android:textColor="@android:color/white"
+        android:layout_marginBottom="16dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Historia gier:"
+        android:textSize="20sp"
+        android:textColor="@android:color/white"
+        android:layout_marginBottom="8dp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvGameHistory"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:clipToPadding="false"
+        android:paddingBottom="12dp"
+        android:overScrollMode="never"
+        android:scrollbars="vertical" />
+
+    <Button
+        android:id="@+id/btnResetScores"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Resetuj punkty"
+        android:textSize="16sp"
+        android:textColor="@android:color/white"
+        android:backgroundTint="@color/colorAccent"
+        android:paddingLeft="24dp"
+        android:paddingRight="24dp"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:layout_marginTop="16dp" />
+</LinearLayout>
